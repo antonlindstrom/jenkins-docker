@@ -5,7 +5,7 @@ RUN apt-get update
 RUN echo deb http://pkg.jenkins-ci.org/debian binary/ >> /etc/apt/sources.list
 
 RUN apt-get install -y wget
-RUN apt-get install -y git build-essential cmake make autotools
+RUN apt-get install -y git build-essential cmake make
 
 RUN wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -
 
